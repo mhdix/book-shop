@@ -1,0 +1,91 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 45px;
+    align-items: center;
+    /* background-color: rgb(220, 220, 220); */
+    position: absolute;
+    width: 100%;
+}
+.header-logo img{
+    width: 60px;
+}
+.header-search input {
+    padding: 15px 7px ;
+    border: 1px solid rgba(152, 152, 152, 0.293);
+    border-left: none;
+    text-align: right;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+.header-search{
+    display: flex;
+    align-items: center;
+}
+button{
+    border: 1px solid rgba(152, 152, 152, 0.293);
+    cursor: pointer;
+
+}
+
+.header-search button{
+    background-color: rgb(19, 209, 19);
+    padding: 14px 15px;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+}
+.header-search button::selection{
+    background-color: #fff;
+}
+.header {
+    display: flex;
+}
+.header-btn button{
+    padding: 5px 15px;
+    margin: 0 7px 0 0;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.header-cart{
+    background-color: #0693e3;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.login-signup{
+    background-color: #dedede00;
+    font-size: 18px;
+}
+
+/* navigation */
+.navigation {
+    width: 100%;
+    margin-top: 80px;
+    padding: 15px 0;
+    text-align: right;
+    background-color: rgba(51, 51, 51, 0.142);
+}
+.navigation a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: black;
+
+}
+.navigation a:hover {
+    color: rgba(36, 95, 15, 0.559);
+    transition: 0.3s ease-in-out ;
+    -webkit-transition: 0.3s ease-in-out ;
+    -moz-transition: 0.3s ease-in-out ;
+    -ms-transition: 0.3s ease-in-out ;
+    -o-transition: 0.3s ease-in-out ;
+}
