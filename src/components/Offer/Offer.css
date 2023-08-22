@@ -1,8 +1,47 @@
-.reading{
+.reading h3 {
     text-align: center;
     border-bottom: 1px solid rgb(150, 150, 150);
     padding: 20px;
 }
-.reading-books{
-    
+
+.reading-books {
+    display: flex;
+    text-align: center;
+}
+
+.reading-books div img {
+    width: 75%;
+}
+.reading-book__description{
+
+}
+.reading-book__caption span p {
+    color: rgb(84, 162, 0);
+}
+.discount{
+    position: absolute;
+    background-color: rgb(26, 156, 30);
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 18%;
+}
+.discount-mony del{
+    padding: 0 10px;
+}
+.discount-mony{
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
 }
