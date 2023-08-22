@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header/Header'
 import NewBook from './components/NewBook/NewBook'
 import Offer from './components/Offer/Offer'
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <NewBook />
       <Offer />
+      <Footer />
     </>
   )
 }

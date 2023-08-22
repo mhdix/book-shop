@@ -16,7 +16,7 @@ export default Offer
 function Product() {
     return (
         <div className='reading-books'>
-            <div>
+            <div className='reading-book__main'>
                 <span className='discount'>
                     -50
                 </span>
@@ -25,13 +25,13 @@ function Product() {
                     <p className='reading-book__description'>کتاب هنر ظریف بی خیالی</p>
                     <span className='discount-mony'>
                         <p>25,00 تومان</p>
-                        <del>تومان 50,000</del>
+                        <div>تومان 50,000</div>
                     </span>
                     
                 </div>
             </div>
 
-            <div>
+            <div className='reading-book__main'>
                 <span className='discount'>
                     -10
                 </span>
@@ -44,7 +44,7 @@ function Product() {
 
                 </div>
             </div>
-            <div>
+            <div className='reading-book__main'>
                 <img src={offer1} alt="" />
                 <div className='reading-book__caption'>
                     <p className='reading-book__description'>کتاب هنر ظریف بی خیالی</p>
@@ -53,7 +53,7 @@ function Product() {
                     </span>
                 </div>
             </div>
-            <div>
+            <div className='reading-book__main'>
                 <img src={offer1} alt="" />
                 <div className='reading-book__caption'>
                     <p className='reading-book__description'>کتاب هنر ظریف بی خیالی</p>
