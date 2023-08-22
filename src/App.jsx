@@ -11,6 +11,8 @@ function App() {
       <Header />
       <NewBook />
       <Offer />
+      <Offer />
+      <Offer />
       <Footer />
     </>
   )

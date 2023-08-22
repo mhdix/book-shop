@@ -1,31 +1,41 @@
 .reading h3 {
     text-align: center;
-    border-bottom: 1px solid rgb(150, 150, 150);
-    padding: 20px;
+    border-bottom: 2px solid rgba(150, 150, 150, 0.271);
+    padding: 25px 0;
 }
 
 .reading-books {
     display: flex;
     text-align: center;
+    padding: 10px;
 }
-.reading-book__main:hover{
-    box-shadow: 0px 10px 15px rgb(113, 113, 113);
+
+.reading-book__main {
+    padding: 30px 20px;
+    cursor: pointer;
+}
+
+.reading-book__main:hover {
+    box-shadow: 0px 0 80px 1px rgba(113, 113, 113, 0.233);
 }
 
 .reading-books div img {
     width: 75%;
 }
-.reading-book__description{
 
-}
 .reading-book__caption span p {
     color: rgb(84, 162, 0);
 }
-.discount{
+
+.reading-book__caption span {
+    font-weight: 700;
+}
+
+.discount {
     position: absolute;
-    background-color: rgb(23, 133, 27);
+    background-color: rgb(35, 109, 37);
     color: whitesmoke;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 12px;
     display: flex;
     align-items: center;
@@ -37,17 +47,27 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin-top: 20px;
-    margin-left: 18%;
+    margin-left: 16%;
 }
-.discount-mony div{
+
+.discount-mony p {
     padding: 0 10px;
-    text-decoration:line-through;
-    
+    text-decoration: line-through;
+
 }
-.discount-mony{
+
+.discount-mony {
     display: flex;
     justify-content: center;
     padding: 0 10px;
     font-weight: 600;
+}
+
+.discount-mony div {
+    color: rgb(23, 133, 27);
+
+}
+
+.discount-mony p {
+    color: rgba(0, 0, 0, 0.351) !important;
 }

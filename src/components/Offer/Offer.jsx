@@ -1,6 +1,7 @@
 import React from 'react'
 import './Offer.css'
 import offer1 from '../../assets/offer/1.webp'
+import books from '../books'
 const Offer = () => {
     return (
         <div className='reading'>
@@ -16,52 +17,31 @@ export default Offer
 function Product() {
     return (
         <div className='reading-books'>
-            <div className='reading-book__main'>
-                <span className='discount'>
-                    -50
-                </span>
-                <img src={offer1} alt="" />
-                <div className='reading-book__caption'>
-                    <p className='reading-book__description'>کتاب هنر ظریف بی خیالی</p>
-                    <span className='discount-mony'>
-                        <p>25,00 تومان</p>
-                        <div>تومان 50,000</div>
-                    </span>
-                    
-                </div>
-            </div>
+            {
+                books.map((item) => {
+                    return (
+                        <div className='reading-book__main'>
+                            {
+                                item.discount && <span className='discount'>
+                                    -{item.discount}
+                                </span>
+                            }
+                            <img src={offer1} alt="" />
+                            <div className='reading-book__caption'>
+                                <p className='reading-book__description'>{item.name}</p>
 
-            <div className='reading-book__main'>
-                <span className='discount'>
-                    -10
-                </span>
-                <img src={offer1} alt="" />
-                <div className='reading-book__caption'>
-                    <p className='reading-book__description'>کتاب هنر ظریف بی خیالی</p>
-                    <span>
-                        <p>تومان 55,000</p>
-                    </span>
+                                {item.discount ? <span className='discount-mony'>
+                                    <div>{(item.price * item.discount) / 100} تومان</div>
+                                    <p>تومان {item.price}</p>
+                                </span> : <span>
+                                    <div>تومان {item.price}</div>
+                                </span>}
 
-                </div>
-            </div>
-            <div className='reading-book__main'>
-                <img src={offer1} alt="" />
-                <div className='reading-book__caption'>
-                    <p className='reading-book__description'>کتاب هنر ظریف بی خیالی</p>
-                    <span>
-                        <p>تومان 55,000</p>
-                    </span>
-                </div>
-            </div>
-            <div className='reading-book__main'>
-                <img src={offer1} alt="" />
-                <div className='reading-book__caption'>
-                    <p className='reading-book__description'>کتاب هنر ظریف بی خیالی</p>
-                    <span>
-                        <p>تومان 55,000</p>
-                    </span>
-                </div>
-            </div>
+                            </div>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }
