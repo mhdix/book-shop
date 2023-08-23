@@ -11,12 +11,14 @@
 }
 
 .reading-book__main {
-    padding: 30px 20px;
+    padding: 30px 10px;
+    margin: 0 10px;
     cursor: pointer;
+    border: 1px solid rgba(142, 142, 142, 0.281);
 }
 
 .reading-book__main:hover {
-    box-shadow: 0px 0 80px 1px rgba(113, 113, 113, 0.233);
+    box-shadow: 0px 50px 80px 1px rgba(113, 113, 113, 0.092);
 }
 
 .reading-books div img {
