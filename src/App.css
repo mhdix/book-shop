@@ -4,3 +4,9 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.reading h3 {
+  text-align: center;
+  border-bottom: 2px solid rgba(150, 150, 150, 0.271);
+  padding: 10px 0 10px 0;
+  margin: 36px 0 10px 0;
+} 

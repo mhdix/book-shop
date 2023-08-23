@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import NewBook from './components/NewBook/NewBook'
 import Offer from './components/Offer/Offer'
 import Footer from './components/Footer/Footer';
+import Introduction from './components/introduction/Introduction';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Offer />
       <Offer />
       <Offer />
+      <Introduction />
       <Footer />
     </>
   )

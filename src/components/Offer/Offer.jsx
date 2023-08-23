@@ -2,6 +2,7 @@ import React from 'react'
 import './Offer.css'
 import offer1 from '../../assets/offer/1.webp'
 import books from '../books'
+import '../../App.css'
 const Offer = () => {
     return (
         <div className='reading'>
@@ -23,7 +24,7 @@ function Product() {
                         <div className='reading-book__main'>
                             {
                                 item.discount && <span className='discount'>
-                                    -{item.discount}
+                                    -{item.discount}%
                                 </span>
                             }
                             <img src={offer1} alt="" />
