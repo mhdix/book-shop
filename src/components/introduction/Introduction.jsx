@@ -14,7 +14,9 @@ const Introduction = () => {
             </div>
             <div className='introduction-main'>
                 <div className='introduction'>
-                    <img src={img1} alt="" />
+                    <div className='introduction-main-img'>
+                        <img src={img1} alt="" />
+                    </div>
                     <div className='introduction-content'>
                         <h5>برترین ها</h5>
                         <h4>بهترین رمان های کره ای و ژاپنی [ترجمه فارسی]</h4>
@@ -23,7 +25,10 @@ const Introduction = () => {
                     </div>
                 </div>
                 <div className='introduction'>
-                    <img src={img2} alt="" />
+                    <div className='introduction-main-img'>
+
+                        <img src={img2} alt="" />
+                    </div>
                     <div className='introduction-content'>
                         <h5>مقالات</h5>
                         <h4>بهترین رمان های کره ای و ژاپنی [ترجمه فارسی]</h4>
@@ -32,7 +37,10 @@ const Introduction = () => {
                     </div>
                 </div>
                 <div className='introduction'>
-                    <img src={img3} alt="" />
+                    <div className='introduction-main-img'>
+
+                        <img src={img3} alt="" />
+                    </div>
                     <div className='introduction-content'>
                         <h5>پرفروش ترین ها</h5>
                         <h4>بهترین رمان های کره ای و ژاپنی [ترجمه فارسی]</h4>
@@ -41,7 +49,10 @@ const Introduction = () => {
                     </div>
                 </div>
                 <div className='introduction'>
-                    <img src={img1} alt="" />
+                    <div className='introduction-main-img'>
+
+                        <img src={img1} alt="" />
+                    </div>
                     <div className='introduction-content'>
                         <h5>پرفروش ترین ها</h5>
                         <h4>بهترین رمان های کره ای و ژاپنی [ترجمه فارسی]</h4>
@@ -59,7 +70,7 @@ export default Introduction
 function tag() {
     return (
         <span>
-           <button><BsFillShareFill /></button>
+            <button><BsFillShareFill /></button>
             <button><BsFillChatDotsFill /></button>
             <p>کتاب سراج</p>
             <img src={icon} alt="" />
