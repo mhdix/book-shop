@@ -15,6 +15,7 @@ const Header = () => {
                 </div>
                 <div className='header-btn'>
                     <button className='header-cart'>🛒 سبد خرید شما</button>
+                    <span></span>
                     <button className='login-signup'>🖖 ورود / ثبت نام</button>
                 </div>
             </div>

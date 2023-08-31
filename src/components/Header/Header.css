@@ -1,14 +1,13 @@
 .main-header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 45px;
     align-items: center;
     /* background-color: rgb(220, 220, 220); */
     position: absolute;
     width: 100%;
 }
 .header-logo img{
-    width: 60px;
+    width: 160px;
 }
 .header-search input {
     padding: 15px 7px ;
@@ -24,10 +23,16 @@
 .header-search{
     display: flex;
     align-items: center;
+    width: 45%;
 }
+.header-search input{
+    width: 90%;
+}
+
 button{
     border: 1px solid rgba(152, 152, 152, 0.293);
     cursor: pointer;
+    font-weight: 700;
 
 }
 
@@ -48,13 +53,14 @@ button{
     display: flex;
 }
 .header-btn button{
-    padding: 5px 15px;
+    padding: 10px 15px;
     margin: 0 7px 0 0;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+    font-size: 14px;
 }
 .header-cart{
     background-color: #0693e3;
