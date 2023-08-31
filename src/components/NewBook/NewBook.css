@@ -1,6 +1,7 @@
 .new-book img{
     width: 50%;
     padding: 0 5px;
+    border-radius: 25px;
 }    
 .new-book{
     display: flex;
