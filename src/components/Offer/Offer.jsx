@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react'
 import './Offer.css'
 import offer1 from '../../assets/offer/1.webp'
-import books from '../books'
 import '../../App.css'
 import { toast } from 'react-hot-toast'
+import books from './../books';
+books
 const Offer = () => {
     return (
         <div className='reading'>
             <h3>خواندنی ترین رمان های دنیا</h3>
-            <Product />
+            <Product books={books} />
         </div>
     )
 }
@@ -16,14 +17,14 @@ const Offer = () => {
 export default Offer
 
 
-function Product() {
+function Product({ books }) {
     // tests
     useEffect(() => {
         async function fetchData() {
             try {
                 const res = await fetch("https://rickandmortyapi.com/api/character/85")
                 if (!res.ok) throw new Error('!!اروری موجود است')
-                 const data = await res.json() 
+                const data = await res.json()
                 console.log(data);
             } catch (err) {
                 console.log(err.message);
@@ -32,10 +33,12 @@ function Product() {
         }
         fetchData()
     })
+    
     return (
         <div className='reading-books'>
             {
                 books.map((item) => {
+                    let mainPrice = (item.price * item.discount) / 100
                     return (
                         <div className='reading-book__main'>
                             {
@@ -48,10 +51,10 @@ function Product() {
                                 <p className='reading-book__description'>{item.name}</p>
 
                                 {item.discount ? <span className='discount-mony'>
-                                    <div>{(item.price * item.discount) / 100} تومان</div>
+                                    <div>{item.price - mainPrice} تومان</div>
                                     <p>تومان {item.price}</p>
                                 </span> : <span>
-                                    <div>تومان {item.price}</div>
+                                    <div>تومان {item.price}</div>   
                                 </span>}
 
                             </div>
