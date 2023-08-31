@@ -9,15 +9,21 @@ function App() {
 
   return (
     <>
-    {/* toaster error shwo */}
+      {/* toaster error shwo */}
       <Toaster />
-    {/* toaster error shwo */}
+      {/* toaster error shwo */}
 
       <Header />
       <NewBook />
-      <Offer />
-      <Offer />
-      <Offer />
+      <Offer key={1}>
+        <h3>ارزان ترین ها</h3>
+      </Offer>
+      <Offer key={2}>
+        <h3>جدید ترین ها</h3>
+      </Offer>
+      <Offer key={3}>
+        <h3>خواندنی ترین رمان های دنیا</h3>
+      </Offer>
       <Introduction />
       <Footer />
     </>

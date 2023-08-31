@@ -5,11 +5,11 @@ import '../../App.css'
 import { toast } from 'react-hot-toast'
 import books from './../books';
 books
-const Offer = () => {
+const Offer = ({children , key}) => {
     return (
         <div className='reading'>
-            <h3>خواندنی ترین رمان های دنیا</h3>
-            <Product books={books} />
+            {children}
+            <Product books={books} key={key}/>
         </div>
     )
 }
@@ -17,7 +17,7 @@ const Offer = () => {
 export default Offer
 
 
-function Product({ books }) {
+function Product({ books, key }) {
     // tests
     useEffect(() => {
         async function fetchData() {
@@ -37,7 +37,7 @@ function Product({ books }) {
     return (
         <div className='reading-books'>
             {
-                books.map((item) => {
+               books.map((item) => {
                     let mainPrice = (item.price * item.discount) / 100
                     return (
                         <div className='reading-book__main'>
@@ -54,7 +54,7 @@ function Product({ books }) {
                                     <div>{item.price - mainPrice} تومان</div>
                                     <p>تومان {item.price}</p>
                                 </span> : <span>
-                                    <div>تومان {item.price}</div>   
+                                    <div>تومان {item.price}</div>
                                 </span>}
 
                             </div>
