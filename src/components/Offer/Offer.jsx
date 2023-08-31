@@ -4,7 +4,6 @@ import offer1 from '../../assets/offer/1.webp'
 import '../../App.css'
 import { toast } from 'react-hot-toast'
 import books from './../books';
-books
 const Offer = ({children , key}) => {
     return (
         <div className='reading'>
@@ -25,9 +24,7 @@ function Product({ books, key }) {
                 const res = await fetch("https://rickandmortyapi.com/api/character/85")
                 if (!res.ok) throw new Error('!!اروری موجود است')
                 const data = await res.json()
-                console.log(data);
             } catch (err) {
-                console.log(err.message);
                 toast.error(err.message)
             }
         }
