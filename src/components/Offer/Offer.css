@@ -33,8 +33,8 @@
 }
 
 /* fixed price place */
-/* 
-.reading-book__caption span {
+
+/* .reading-book__caption span {
     position: absolute;
     width: 100%;
     margin-bottom: 20px;
@@ -53,8 +53,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -84,9 +84,6 @@
 .discount-mony p {
     color: rgba(0, 0, 0, 0.351) !important;
 }
-
-.introduction {}
-
 
 .change-offer {
     border: none ;

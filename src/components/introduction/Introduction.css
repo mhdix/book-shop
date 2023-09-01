@@ -37,6 +37,7 @@
 
 .introduction-content {
     padding: 0 15px;
+    color: rgb(114, 114, 114);
 }
 
 .introduction-content span svg {
@@ -84,6 +85,7 @@
 
 .introduction-content p {
     padding: 10px 0 25px 0;
+    margin: 0 20px;
 }
 
 .introduction-content span {

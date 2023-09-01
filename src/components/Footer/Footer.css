@@ -2,7 +2,6 @@
     width: 100%;
     height: fit-content;
     background-color: rgba(51, 51, 51, 0.142);
-    box-shadow: 0 1px 19px 1px rgb(108, 108, 108);
     margin-top: 50px;
     padding: 20px;
     text-align: end;
@@ -19,23 +18,35 @@
 
 
 .links div {
-    padding: 0 50px;
+    padding: 0 60px;
 }
 
+.links>div:nth-child(3) {
+    padding: 0 25px;
+}
+
+
+.links div h4{
+    font-size: 19px;
+    color: rgba(32, 32, 32, 0.786);
+    font-weight: 900;
+}
 .links ul {
-    color: rgb(86, 86, 86);
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 17px;
 }
 .links ul li{
     margin: 7px 0;
 }
 .links ul li a{
+    font-weight: 900;
     text-decoration: none;
-    color: rgb(105, 105, 105);
+    color: rgba(118, 118, 118, 0.679);
+
 }
 .site-caption{
     display: flex;
+    align-items: center;
 }
 
 .site-caption div{
@@ -44,5 +55,5 @@
 }
 .site-caption p{
     font-size: 14px;
-    color: rgb(158, 158, 158);
+    color: rgb(134, 134, 134);
 }
