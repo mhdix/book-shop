@@ -23,6 +23,9 @@
     overflow: hidden;
 }
 
+.introduction-main-img img{
+    width: 100%;
+}
 .introduction-main-img {
     margin-bottom: 10px;
     border-radius: 10px 10px 0 0;

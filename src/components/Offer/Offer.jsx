@@ -4,11 +4,12 @@ import offer1 from '../../assets/offer/1.webp'
 import '../../App.css'
 import { toast } from 'react-hot-toast'
 import books from './../books';
-const Offer = ({children , key}) => {
+const Offer = ({ children, key }) => {
     return (
         <div className='reading'>
             {children}
-            <Product books={books} key={key}/>
+            <Product books={books} key={key} />
+
         </div>
     )
 }
@@ -30,11 +31,12 @@ function Product({ books, key }) {
         }
         fetchData()
     })
-    
+
     return (
         <div className='reading-books'>
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             {
-               books.map((item) => {
+                books.map((item) => {
                     let mainPrice = (item.price * item.discount) / 100
                     return (
                         <div className='reading-book__main'>
@@ -59,6 +61,8 @@ function Product({ books, key }) {
                     )
                 })
             }
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
         </div>
     )
 }

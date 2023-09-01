@@ -38,7 +38,6 @@ const Introduction = () => {
                 </div>
                 <div className='introduction'>
                     <div className='introduction-main-img'>
-
                         <img src={img3} alt="" />
                     </div>
                     <div className='introduction-content'>

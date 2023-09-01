@@ -31,28 +31,27 @@ const Header = () => {
 
 export default Header
 
-function Search({ allBooks, setSearched, searched, searchBox, setSearchBox  }) {
-    console.log(searchBox);
-    const searchRes = allBooks.name
-    
+function Search({ allBooks, setSearched, searched, searchBox, setSearchBox }) {
     return (
         <div className='header-search'>
             <button>🔍</button>
             <input type="text" placeholder='جستجوی محصولات' onChange={(e) => setSearched(e.target.value)} onClick={() => setSearchBox(!searchBox)} />
             <div className={`search-content ${searchBox == true ? 'show-search' : ''}`} >
-                {/* {searchRes.filter((all) => {
-                    return console.log(all === searched);
-                })} */}
-                <div className='main-search'>
-                    <div className="search-content__content">
-                        <h3>موضوع کتاب</h3>
-                        <p style={{ margin: '30px 0 0 0' }}>قیمت : 56000</p>
-                    </div>
-                    <div className='search-img'>
-                        <img src={img1} alt="" />
-                    </div>
-                </div>
+                {allBooks.filter(item => String(item.name).includes(`${searched}`)).map((filteredBook => {
+                    return (
+                        <div className='main-search' >
+                            <div className="search-content__content">
+                                <h3>{filteredBook.name}</h3>
+                                <p style={{ margin: '30px 0 0 0' }}>قیمت : 56000</p>
+                            </div>
+                            <div className='search-img'>
+                                <img src={img1} alt="" />
+                            </div>
+                        </div>
+                    )
+                }))}
+
             </div>
-        </div>
+        </div >
     )
 }
