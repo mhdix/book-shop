@@ -19,6 +19,15 @@
     width: 75%;
 }
 
+.reading-book__caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    bottom: 0;
+    height: fit-content;
+    
+}
+
 .reading-book__caption span p {
     color: rgb(84, 162, 0);
 }

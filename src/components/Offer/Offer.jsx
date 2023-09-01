@@ -9,7 +9,6 @@ const Offer = ({ children, key }) => {
         <div className='reading'>
             {children}
             <Product books={books} key={key} />
-
         </div>
     )
 }
@@ -31,7 +30,6 @@ function Product({ books, key }) {
         }
         fetchData()
     })
-
     return (
         <div className='reading-books'>
             <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -39,7 +37,7 @@ function Product({ books, key }) {
                 books.map((item) => {
                     let mainPrice = (item.price * item.discount) / 100
                     return (
-                        <div className='reading-book__main'>
+                        <div className='reading-book__main' onClick={() => setClickedId(item.id)}>
                             {
                                 item.discount && <span className='discount'>
                                     -{item.discount}%
@@ -48,14 +46,12 @@ function Product({ books, key }) {
                             <img src={offer1} alt="" />
                             <div className='reading-book__caption'>
                                 <p className='reading-book__description'>{item.name}</p>
-
                                 {item.discount ? <span className='discount-mony'>
                                     <div>{item.price - mainPrice} تومان</div>
                                     <p>تومان {item.price}</p>
                                 </span> : <span>
                                     <div>تومان {item.price}</div>
                                 </span>}
-
                             </div>
                         </div>
                     )

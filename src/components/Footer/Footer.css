@@ -1,8 +1,48 @@
-.footer{
+.footer {
     width: 100%;
-    height: 200px;
+    height: fit-content;
     background-color: rgba(51, 51, 51, 0.142);
     box-shadow: 0 1px 19px 1px rgb(108, 108, 108);
     margin-top: 50px;
-    text-align: center;
+    padding: 20px;
+    text-align: end;
+}
+
+.footer .links ul {
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.links div {
+    padding: 0 50px;
+}
+
+.links ul {
+    color: rgb(86, 86, 86);
+    font-size: 14px;
+    margin-top: 17px;
+}
+.links ul li{
+    margin: 7px 0;
+}
+.links ul li a{
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+}
+.site-caption{
+    display: flex;
+}
+
+.site-caption div{
+    margin-top: 17px;
+    width: 50%;
+}
+.site-caption p{
+    font-size: 14px;
+    color: rgb(158, 158, 158);
 }
