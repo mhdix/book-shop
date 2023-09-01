@@ -1,3 +1,10 @@
+.reading h3 {
+    text-decoration: underline;
+    padding: 10px 0;
+    text-underline-offset: 18px;
+    text-decoration-color: green;
+    -moz-text-decoration-color: green;
+}
 .reading-books {
     display: flex;
     text-align: center;
