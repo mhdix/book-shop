@@ -32,10 +32,15 @@ const Header = () => {
 export default Header
 
 function Search({ allBooks, setSearched, searched, searchBox, setSearchBox }) {
+    // open search box when click inpiut and writing text inner input
+    const openSearchedBox = (e) => {
+        setSearched(e.target.value)  
+        setSearchBox(!searchBox)
+    }
     return (
         <div className='header-search'>
             <button>🔍</button>
-            <input type="text" placeholder='جستجوی محصولات' onChange={(e) => setSearched(e.target.value)} onClick={() => setSearchBox(!searchBox)} />
+            <input type="text" placeholder='جستجوی محصولات' onChange={(e) => openSearchedBox(e)} onClick={() => setSearchBox(!searchBox)} />
             <div className={`search-content ${searchBox == true ? 'show-search' : ''}`} >
                 {allBooks.filter(item => String(item.name).includes(`${searched}`)).map((filteredBook => {
                     return (
