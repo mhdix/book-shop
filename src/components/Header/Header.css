@@ -1,5 +1,6 @@
 .main-header {
     display: flex;
+    margin-top: 5px;
     justify-content: space-between;
     align-items: center;
     /* background-color: rgb(220, 220, 220); */
@@ -8,12 +9,12 @@
 }
 
 .header-logo img {
-    width: 160px;
+    width: 130px;
 }
 
 .header-search input {
     width: 100%;
-    padding: 15px 7px;
+    padding: 10px 7px;
     border: 1px solid rgba(152, 152, 152, 0.621);
     text-align: right;
     border-radius: 5px;
@@ -101,7 +102,7 @@ button {
 }
 
 .header-btn button {
-    padding: 10px 15px;
+    padding: 8px 15px;
     margin: 0 7px 0 0;
     border-radius: 6px;
     -webkit-border-radius: 6px;
