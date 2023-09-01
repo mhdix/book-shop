@@ -42,7 +42,7 @@ function Search({ allBooks, setSearched, searched, searchBox, setSearchBox }) {
             <button>🔍</button>
             <input type="text" placeholder='جستجوی محصولات' onChange={(e) => openSearchedBox(e)} onClick={() => setSearchBox(!searchBox)} />
             <div className={`search-content ${searchBox == true ? 'show-search' : ''}`} >
-                {allBooks.filter(item => String(item.name).includes(`${searched}`)).map((filteredBook => {
+                {allBooks.filter(item => String(item.name).includes(`${searched}`)).map(((filteredBook , index) => {
                     return (
                         <div className='main-search' >
                             <div className="search-content__content">
@@ -52,6 +52,7 @@ function Search({ allBooks, setSearched, searched, searchBox, setSearchBox }) {
                             <div className='search-img'>
                                 <img src={img1} alt="" />
                             </div>
+                            <h5>{index +1 }</h5>
                         </div>
                     )
                 }))}
