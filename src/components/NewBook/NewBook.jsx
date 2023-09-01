@@ -9,8 +9,8 @@ const NewBook = () => {
     return (
         <>
             <div className='new-book'>
-                <img src={newBook1} alt="" />
                 <img src={newBook2} alt="" />
+                <img src={newBook1} alt="" />
             </div>
             <div className='new-book__offer'>
                 <img src={newBook1_1} alt="" />
