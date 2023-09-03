@@ -18,7 +18,7 @@ const Header = () => {
                 </div>
                 <Search searchBox={searchBox} setSearchBox={setSearchBox} setSearched={setSearched} searched={searched} allBooks={allBooks} />
                 <div className='header-btn'>
-                    <button className='header-cart'>🛒 سبد خرید شما</button>
+                    <button className='header-cart'><span>🛒</span> سبد خرید شما</button>
                     <span></span>
                     <button className='login-signup'>🖖 ورود / ثبت نام</button>
                 </div>

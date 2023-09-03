@@ -44,6 +44,9 @@
     color: rgba(118, 118, 118, 0.679);
 
 }
+.links ul li a:hover{
+    color: rgb(40, 40, 40);
+}
 .site-caption{
     display: flex;
     align-items: center;
