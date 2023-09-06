@@ -1,9 +1,11 @@
 import enamad from '../../assets/enamad/logo.png'
 import React from 'react'
 import './Footer.css'
+
 const Footer = () => {
   return (
     <div className='footer'>
+
       <div className="links">
         <div>
           <h4>حساب کاربری</h4>

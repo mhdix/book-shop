@@ -4,6 +4,7 @@ import './Header.css'
 import Navigation from './Navigation'
 import books from './../books';
 import img1 from '../../assets/offer/1.webp'
+import Date from '../Date';
 const Header = () => {
     const [allBooks, setAllBooks] = useState(books)
     const [selectedBook, setSelectedBook] = useState([])
@@ -40,6 +41,7 @@ function Search({ allBooks, setSearched, searched, searchBox, setSearchBox }) {
     return (
         <div className='header-search'>
             {/* <button>🔍</button> */}
+            <Date />
             <input type="text" placeholder=' ... جستجوی محصولات' onChange={(e) => openSearchedBox(e)} onClick={() => setSearchBox(true)} />
             <div className={`search-content ${searchBox === true ? 'show-search' : ''}`} >
             <button onClick={()=>setSearchBox(false)}>close</button>
