@@ -41,7 +41,7 @@ function Search({ allBooks, setSearched, searched, searchBox, setSearchBox }) {
     return (
         <div className='header-search'>
             {/* <button>🔍</button> */}
-            <Date />
+            {/* <Date /> */}
             <input type="text" placeholder=' ... جستجوی محصولات' onChange={(e) => openSearchedBox(e)} onClick={() => setSearchBox(true)} />
             <div className={`search-content ${searchBox === true ? 'show-search' : ''}`} >
             <button onClick={()=>setSearchBox(false)}>close</button>
