@@ -1,10 +1,10 @@
 import React from 'react'
 import './Introduction.css'
-import '../../App.css'
-import img1 from '../../assets/introduction/1.webp'
-import img2 from '../../assets/introduction/2.webp'
-import img3 from '../../assets/introduction/3.webp'
-import icon from '../../assets/icon/icon.png'
+import '../../../App.css'
+import img1 from '../../../assets/introduction/1.webp'
+import img2 from '../../../assets/introduction/2.webp'
+import img3 from '../../../assets/introduction/3.webp'
+import icon from '../../../assets/icon/icon.png'
 import { BsFillChatDotsFill, BsFillShareFill } from "react-icons/bs";
 const Introduction = () => {
     return (

@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import './Offer.css'
-import offer1 from '../../assets/offer/1.webp'
-import '../../App.css'
+import '../../../App.css'
 import { toast } from 'react-hot-toast'
-import books from './../books';
+import books from '../../books'
+import OfferImg from '../../../assets/offer/1.webp'
+
 const Offer = ({ children, key }) => {
     return (
         <div className='reading'>
@@ -43,7 +44,7 @@ function Product({ books, key }) {
                                     -{item.discount}%
                                 </span>
                             }
-                            <img src={offer1} alt="" />
+                            <img src={OfferImg} alt="" />
                             <div className='reading-book__caption'>
                                 <p className='reading-book__description'>{item.name}</p>
                                 {item.discount ? <span className='discount-mony'>

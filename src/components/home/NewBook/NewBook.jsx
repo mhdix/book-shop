@@ -1,9 +1,9 @@
 import React from 'react'
-import newBook1 from '../../assets/new-book/1.webp'
-import newBook2 from '../../assets/new-book/2.webp'
-import newBook1_1 from '../../assets/new-book/1-1.webp'
-import newBook2_1 from '../../assets/new-book/2-1.webp'
-import newBook3_1 from '../../assets/new-book/3-1.webp'
+import newBook1 from '../../../assets/new-book/1.webp'
+import newBook2 from '../../../assets/new-book/2.webp'
+import newBook1_1 from '../../../assets/new-book/1-1.webp'
+import newBook2_1 from '../../../assets/new-book/2-1.webp'
+import newBook3_1 from '../../../assets/new-book/3-1.webp'
 import './NewBook.css'
 const NewBook = () => {
     return (

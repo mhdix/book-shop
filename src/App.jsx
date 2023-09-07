@@ -1,15 +1,21 @@
 import './App.css'
-import { Route, Routes } from 'react-router-dom';
-import Pages from './components/Pages';
+import { Route, Router, Routes } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import routes from './components/Routes/Routes';
 function App() {
   return (
-    <main>
-      <Routes>
-        <Route path='' element={<Pages />} exact />
-        <Route path='/a' element={<Footer />} />
-      </Routes>
-    </main>
+    <div className='App'>
+        <Header />
+        <Routes>
+          {
+            routes.map((route, index) => {
+              return <Route path={route.path} element={route.element} exact={route.exact} key={index} />
+            })
+          }
+        </Routes>
+        <Footer />
+    </div>
   )
 }
 
