@@ -13,16 +13,17 @@
 .reading-books button {
     width: 5%;
     height: min-content;
-    padding: 15px 0;
     display: flex;
     justify-content: center;
     align-self: center;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    background-color: rgba(172, 255, 47, 0.374);
+    top:50%;
+    background-color:#2e2e2f;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+
 }
 .reading-book__main {
     padding: 30px 10px;
